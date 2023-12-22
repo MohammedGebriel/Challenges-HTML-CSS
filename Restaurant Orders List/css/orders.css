@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    padding: 20px;
+}
+.design {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.design header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.design header i {
+    font-size: 25px;
+    color: #777;
+}
+.design nav form {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+.design nav input[type="search"] {
+    border: none;
+    outline: none;
+    padding: 15px 20px ;
+    background-color: #ddd;
+    font-style: italic;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    width: 34%;
+    color: #333;
+    font-size: 18px;
+}
+.design nav input[type="search"]:nth-child(1) {
+    width: 18%;
+}
+.design nav input[type="submit"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(98, 40, 175);
+    text-transform: uppercase;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-weight: bold;
+}
+
+.content .box form {
+    width: 10%;
+}
+.content .box  input[type="checkbox"] {
+    appearance: none;
+}
+.content .box  label {
+    position: relative;
+}
+.content .box  label::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    left: -7px;
+    top: 0px;
+    margin-right: 10px;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.content .box  input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: -3px;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(98, 40, 175);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.content .box {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+}
+.content .box:not(:last-child) {
+    border-bottom: 2px solid #ccc;
+}
+.content .box:first-child {
+    font-size: 20px;
+    color: #222;
+    font-weight: 600;
+}
+.content .box .image {
+    width: 10%;
+}
+.content .box .image img {
+    max-width: 100%;
+    width: 100%;
+    height: 100px;
+    width: 100px;
+}
+.content .box .menu {
+    width: 10%;
+}
+.content .box .customer {
+    width: 15%;
+}
+.content .box .quantity {
+    width: 6%;
+}
+.content .box .quantity .quant {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.content .box .amount {
+    width: 8%;
+}
+.content .box .status {
+    width: 12%;
+}
+.content .box .status .order {
+    padding: 8px 12px;
+    background-color: #00FFFF;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.content .box:nth-child(3) .status .order,
+.content .box:nth-child(6) .status .order {
+    background-color: #ff9800;
+    padding: 8px 21px;
+}
+.content .box .phone {
+    width: 12%;
+}
+.content .box .icons {
+    width: 3%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    color: #777;
+}
+.design footer {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #777;
+    font-size: 20px;
+}
+.design footer .pages {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.design footer .pages .numbers {
+    display: flex;
+    gap: 5px;
+}
+.design footer .pages .numbers span {
+    padding: 10px 15px ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.design footer .pages .numbers span:nth-child(1) {
+    color: white;
+    background-color: rgb(98, 40, 175);
+}
+
+
+
+
+
+
+
+
+
+

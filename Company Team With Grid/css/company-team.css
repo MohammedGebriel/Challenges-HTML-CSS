@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    padding: 30px;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 10px;
+}
+.box > div {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+.box > div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #f44336;
+}
+.box > div::after {
+    content: '"';
+    position: absolute;
+    right: 10px;
+    top: calc(100% - 40px);
+    font-size: 45px;
+    color: rgb(163, 162, 162);
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+.box > div h2 {
+    margin-bottom: 10px;
+}
+.box > div .jop {
+    display: block;
+    margin-bottom: 20px;
+    color: rgb(163, 162, 162);
+    font-weight: bold;
+}
+.box > div p {
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.box > div .lorem {
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 10px;
+}
+.box > div:nth-child(1) {
+    grid-area: 1/1/2/3;
+}
+.box > div:nth-child(3) {
+    grid-area: 1/4/4/5;
+    background-color: black;
+    color: white;
+}
+.box > div:nth-child(4) {
+    grid-area: 2/1/4/2;
+}
+.box > div:nth-child(5) {
+    grid-area: 2/2/3/4;
+    background-color: black;
+    color: white;
+}
+.box > div:nth-child(6) {
+    grid-area: 3/2/4/4;
+}
+.box > div:nth-child(8) {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+

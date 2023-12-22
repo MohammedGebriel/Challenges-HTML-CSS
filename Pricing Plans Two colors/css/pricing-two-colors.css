@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style: none;
+}
+.big-box {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    gap: 30px;
+
+}
+.big-box .box {
+    text-align: center;
+    width: 300px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    border: 1px solid rgba(63, 60, 60, 0.15);
+    position: relative;
+}
+.big-box .box::before {
+    content: "$169";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -70px;
+    left: 83px;
+    border-radius: 50%;
+    border: 10px solid white;
+    outline: 1px solid #2196f3;
+    font-size: 40px;
+
+}
+.big-box .box:nth-child(2):before {
+    content: "$269";
+    background-color: #444;
+    color: white;
+    outline-color: rgba(63, 60, 60, 0.15);
+}
+.big-box .box::after {
+    content: "/Month";
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 128px;
+    top: 20px;
+}
+.big-box .box:nth-child(1) {
+    background-color: #2196f3;
+    color: white;
+}
+
+.big-box .box:nth-child(2) {
+    color: #444;
+    
+}
+.big-box .box h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.big-box .box ul {
+    margin-bottom: 30px;
+}
+.big-box .box ul li {
+    padding: 15px 0;
+    font-weight: bold;
+    border-top: 1px solid rgba(63, 60, 60, 0.15);
+}
+.big-box .box ul li:last-child {
+    border-bottom: 1px solid rgba(63, 60, 60, 0.15);
+}
+.big-box .box button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 20px;
+}
+.big-box .box:nth-child(1) button {
+    color: #2196f3;
+}
+.big-box .box:nth-child(2) button {
+    background-color: #2196f3;
+    color: white;
+}
+.big-box .box:nth-child(1) div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;
+    color: #2196f3;
+    font-size: 20px;
+    font-weight: bold;
+    left: 172px;
+    top: -79px;
+    border: 1px solid #2196f3;
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    background-color: #607d8b;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    outline: 2px solid #eee;
+}
+div::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    z-index: -1;
+    background-image: linear-gradient(to right ,
+    #ff5722 50%,
+    white 50%,
+    white 51%,
+    #4caf50 51%);
+}
+div::after {
+    content: "";
+    position: absolute;
+    top: 52%;
+    left: -50%;
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    z-index: -1;
+    background-image: linear-gradient(to right ,
+    #2196f3 50%,
+    white 50%,
+    white 51%,
+    #ffc107 51%);
+}
+
+
+
+
+
+
+
+
+
+

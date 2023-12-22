@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.images {
+    text-align: center  ;
+    margin: 50px 200px;
+    position: relative;
+    border: 20px solid #475e68;
+    z-index: -1;
+}
+/* .images::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    border: 10px solid;
+    border-color: #475e68 #475e68 #475e68 #475e68   ;
+    z-index: -1;
+} */
+.images::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -30px;
+    height: calc(100%);
+    width: 50%;
+    /* border: 30px solid;
+    border-color: white transparent white transparent; */
+    border-top: 30px solid white;
+    border-bottom: 30px solid white;
+    background-color: #475e68;
+    z-index: -3;
+}
+.images img {
+    padding-top: 40px;
+}

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #DDD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    animation: page-up 3s linear infinite;
+    -webkit-animation: page-up 3s linear infinite;
+}
+@keyframes page-up {
+    0%,
+    100% {
+        top: 50%
+    }
+    50% {
+        top: 43%
+    }
+}
+.card img {
+    position: absolute;
+    top: -111px;
+    left: 40%;
+}
+.card .cv {
+    background-color: white;
+    width: 400px;
+    padding: 20px
+}
+.card .cv .info {
+    border-bottom: 2px solid #a1a1a16b;
+}
+.card .cv .info h3 {
+    font-size: 25px;
+    color: #2196f3;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.card .cv .info p {
+    font-size: 20px;
+    color: #777;
+    margin-top: 10px;
+}
+.card .cv .box {
+    margin-top: 20px;
+}
+.card .cv .box > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #eee;
+    margin-bottom: 5px;
+}
+.card .cv .box > div span:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+}
+.card .cv .box > div:first-child span:nth-child(1) {
+    color: #1877f2;
+    
+}
+.card .cv .box > div:nth-child(2) span:nth-child(1) {
+    color: #1da1f2;
+}
+.card .cv .box > div:nth-child(3) span:nth-child(1) {
+    color: #0077b5;
+}

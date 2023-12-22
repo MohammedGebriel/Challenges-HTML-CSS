@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+}
+h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+body > p {
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    color: #777;
+    line-height: 2;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.feature {
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    padding: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../images/TECH2.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.feature::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.feature > h3 {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.feature > p {
+    position: relative;
+    color: #999;
+    line-height: 2;
+    font-size: 20px ;
+}
+.feature .box {
+    position: absolute;
+    display: flex;
+    width: 500px;
+}
+.feature .box .info {
+    text-align: left;
+    margin-left: 40px;
+    display: inline-block;
+}
+.feature .box .info h4 {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.feature .box .info p {
+    color: #777;
+    line-height: 1.5;
+}
+
+.feature .box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    outline: 15px solid white;
+    display: inline-block;
+}
+.feature .box:nth-of-type(1) {
+    right: -345px;
+    top: 35px;
+}
+.feature .box:nth-of-type(2) {
+    right: -345px;
+    bottom: 35px;
+}
+.feature .box:nth-of-type(3) {
+    left: -345px;
+    top: 35px;
+}
+.feature .box:nth-of-type(3) .info h4 {
+    text-align: right;
+    margin-right: 40px;
+    margin-left: 0;
+}
+.feature .box:nth-of-type(4) {
+    left: -345px;
+    bottom: 35px;
+    text-align: right;
+}
+.feature .box:nth-of-type(4) .info h4 {
+    text-align: right;
+    margin-right: 40px;
+    margin-left: 0;
+}
+

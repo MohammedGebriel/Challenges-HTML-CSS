@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* @media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+} */
+.header {
+    height: 70px;
+    position: relative;
+    /* padding: 20px; */
+}
+.header::before {
+    content: "";
+    position: absolute;
+    left: 15%;
+    top: 100%;
+    width: calc(100% - 15.5%);
+    height: 3px;
+    background-color: #ddd;
+}
+.header p:nth-child(1) {
+    padding: 15px;
+    background-color: orangered;
+    position: relative;
+    width: fit-content;
+    top: 67%;
+    left: 15%;
+    text-transform: uppercase;
+    color: white;
+}
+.header span:first-of-type {
+    display: block;
+    position: absolute;
+    left: 0.5%;
+    top: 67%;
+    background-color: #ff450080;
+    height: 48.39px;
+    width: 15%;
+}
+.header p:nth-child(2) {
+    padding: 15px;
+    background-color: #ddd;
+    position: relative;
+    width: fit-content;
+    top: 0%;
+    left: 80%;
+    text-transform: uppercase;
+    color: black;
+}
+.header p:nth-child(2)::after {
+    content: "\f061";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    right: -44px;
+    top: 0px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+}
+.big-box {
+    margin: 60px calc(20% - 147px) 50px 15%;
+
+}
+.big-box .box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(221, 221, 221, 0.76);
+    color: #777;
+    margin-bottom: 20px;
+}
+.big-box .box > p {
+    text-align: center;
+    padding: 15px   ;
+    font-size: 14px;
+}
+.big-box .box > p span {
+    font-size: 30px ;
+    letter-spacing: -4px;
+}
+.big-box .box img {
+    width: 200px;
+    height: 150px;
+    min-height: 100%;
+}
+.big-box .box .info {
+    padding: 0 20px;
+}
+.big-box .box .info p {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.big-box .box .info .icons {
+    display: flex;
+    gap: 20px;
+}
+
+

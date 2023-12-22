@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style: none;
+}
+.big-box {
+    padding: 50px 30px;
+    display: flex;
+}
+.big-box .box {
+    width: 25%;
+    padding: 50px 0 40px ;
+    background-color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(70, 69, 69, 0.363);;
+}
+.big-box .box:nth-child(3) {
+    background-color: #2196f3;
+    height: calc(100% + 30px);
+    border: none;
+    position: relative;
+}
+.big-box .box:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 40px);
+    background-color: #2196f3;
+    z-index: -1;
+}
+.big-box .box h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.big-box .box span {
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.big-box .box span::before {
+    content: "$";
+    font-size: 20px;
+    position: relative;
+    top: -12px;
+}
+.big-box .box span::after {
+    content: "/ mo";
+    position: relative;
+    font-size: 20px;
+    top: 5px;
+}
+ul li {
+    padding: 20px 0;
+    border-top: 1px solid rgba(214, 211, 211, 0.205);
+    color: #777;
+}
+.big-box .box:nth-child(3) ul li {
+    color: white;
+}
+ul li:nth-child(2),
+ul li:nth-child(4) {
+    background-color: rgba(212, 209, 209, 0.062);
+}
+.box:nth-child(3) li:nth-child(2),
+.box:nth-child(3) ul li:nth-child(4) {
+    background-color: #2196f3;
+}
+.box:nth-child(3) ul li:nth-child(4) {
+    border-bottom: 1px solid rgba(214, 211, 211, 0.205);
+}
+.big-box .box button {
+    margin-top: 50px;
+    background-color: transparent;
+    padding: 10px 40px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

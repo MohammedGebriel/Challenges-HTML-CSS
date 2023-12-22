@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+ul {
+    list-style: none;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+    position: relative;
+}
+header .image {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 330px;
+}
+header .image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 68, 0, 0.568);
+
+}
+header .image img {
+    width: 100%;
+    height: 250px;
+    max-width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+header .respons {
+    background-color: #272525ed;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    top: 45px;
+    left: 36px;
+}
+header .respons h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin-bottom: 40px;
+    position: relative;
+}
+header .respons h2::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 4px;
+    width: 50px;
+    background-color: orangered;
+}
+header .respons ul {
+    margin-bottom: 20px;
+}
+header .respons li {
+    padding: 10px 0;
+}
+header .respons li::before {
+    content: "\f00c";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
+    color: #4caf50;
+}
+header .respons button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+header .box {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid orangered;
+    line-height: 2;
+    position: absolute;
+    left: 40%;
+    top: 270px; 
+}
+.big-box {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 40px;
+}
+.big-box .box {
+    background-color: #F0F8FF;
+    padding: 50px 20px ;
+    position: relative;
+    counter-increment: number;
+}
+.big-box .box::before {
+    content: "0" counter(number);
+    font-size: 40px;
+    color: orangered;
+}
+.big-box .box h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.big-box .box p {
+    color: #777;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.big-box .box span {
+    color: orangered;
+    font-size: 20px;
+    cursor: pointer;
+}
+.big-box .box span::after {
+    content: "\f30b";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    margin-left: 5px;
+    font-size: 13px;
+}
+article {
+    margin-top: 100px;
+    background-image: url(../images/26-20.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    padding: 30px;
+    position: relative;
+    justify-content: space-between;
+}
+article::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.788);
+    
+}
+article .title {
+    position: relative;
+    z-index: 1;
+    width: 40%;
+}
+article .title h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+article .title h2::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 4px;
+    width: 50px;
+    background-color: orangered;
+}
+article .title p {
+    line-height: 2;
+    margin-bottom: 20px;
+}
+article .title button {
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+}
+
+article .image {
+    width: 50%;
+    position: relative;
+}
+article .image img {
+    max-width: 100%;
+
+}

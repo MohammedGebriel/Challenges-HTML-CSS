@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEE;
+    margin: 20px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.profile {
+    display: flex;
+    background-color: white;
+    position: relative;
+    margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+    .profile {
+        flex-direction: column;
+    }
+}
+.profile .level {
+    padding: 20px;
+    text-align: center;
+    min-width: 300px;
+}
+.profile .level img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 150px;
+    margin-bottom: 15px;
+}
+.profile .level > span {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 10px;    
+}
+.profile .level .prog {
+    height: 20px;
+    background-color: #EEE;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+}
+.profile .level .prog::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    background-color: #009688;
+}
+.profile .level p span {
+    color: #009688;
+    font-weight: bold;
+}
+.profile .info {
+    border-left: 1px solid #eee;
+    padding: 0 20px;
+    position: relative;
+}
+.profile .info p:nth-of-type(1) {
+    line-height: 2;
+    color: #777;
+    max-width: 1000px;
+    margin-bottom: 80px;
+}
+.profile .info p:nth-of-type(2) {
+    text-align: right;
+    color: #777;
+}
+@media (max-width: 991px) {
+    .profile .info p:nth-of-type(2){
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+.points {
+    background-color: white;
+    padding: 5px 20px 20px;
+    margin-top: 20px;
+}
+.points h3 {
+    color: white;
+    padding : 10px ;
+    background-color: #607d8b;
+    width: fit-content;
+}
+.points li {
+    padding: 10px 0;
+    /* width: 500px; */
+    max-width: 100%;
+}
+.points li:first-child {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.349);
+}
+.points li:nth-child(2) {
+    border-bottom: 2px solid rgba(204, 204, 204, 0.349);
+}
+.points li .point {
+    color: #009688;
+    font-weight: bold;
+}
+.points li .quest {
+    color: #e91e63;
+    font-weight: bold;
+}
+.trophies {
+    background-color: white;
+    padding: 5px 20px 20px;
+    margin-top: 30px;
+}
+.trophies h3 {
+    color: white;
+    padding : 10px ;
+    background-color: #607d8b;
+    width: fit-content;
+    text-transform: capitalize;
+}
+.trophies .image {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-gap: 10px;
+}
+.trophies .image img {
+    max-width: 100%;
+}
+.news {
+    background-color: white;
+    padding: 5px 20px;
+    margin-top: 30px;
+}
+.news h3 {
+    color: white;
+    padding : 10px ;
+    background-color: #607d8b;
+    width: fit-content;
+    text-transform: capitalize;
+}
+.news p {
+    font-size: 20px;
+}
+.news p .first {
+    color: red;
+    font-weight: bold;
+}
+.news p .second {
+    color: #03a9f4 ;
+    font-weight: bold;
+
+}
+.powers {
+    background-color: white;
+    padding: 5px 20px;
+    margin-top: 30px;
+}
+.powers h3 {
+    color: white;
+    padding : 10px ;
+    background-color: #607d8b;
+    width: fit-content;
+    text-transform: capitalize;
+}
+.powers .box {
+    display: flex;
+    justify-content: space-between;
+}
+.powers .box:not(:nth-of-type(4),:nth-of-type(5),:nth-of-type(6)) {
+    border-bottom: 1px solid #ccc;
+}
+.powers .box:nth-of-type(4),
+.powers .box:nth-of-type(5){
+    border-bottom: 1px solid rgba(204, 204, 204, 0.185);
+}
+.powers .box p {
+    font-size: 20px;
+    color: #556;
+}
+.powers .box span{
+    display: flex;
+    align-items: center;
+    color: #009688;
+    font-weight: bold;
+}
+.powers .box:nth-of-type(3) span,
+.powers .box:nth-of-type(5) span {
+    color: red;
+}
+

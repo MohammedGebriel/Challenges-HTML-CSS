@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+}
+table {
+    margin: auto;
+    text-align: center;
+    border-spacing: 0;
+    font-weight: bold;
+}
+table tr td:not(:last-child) {
+    border-right: 1px solid rgba(204, 204, 204, 0.39);
+}
+table thead tr td {
+    color: white;
+    background-color: orangered;
+}
+table tbody tr td {
+    color: rgb(107, 106, 106);
+
+}
+table tfoot tr td button {
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+table tfoot tr td:nth-child(4) button {
+    background-color: orangered;
+}
+table thead tr td:nth-child(1) {
+    padding: 25px 30px;
+}
+table tbody tr td:nth-child(1),
+table tfoot tr td:nth-child(1) {
+    padding: 20px 30px;
+    color: rgb(141, 138, 138);
+}
+table thead tr td:not(:first-child) {
+    padding: 25px 60px;
+}
+table tbody tr td:not(:first-child),
+table tfoot tr td:not(:first-child) {
+    padding: 20px 60px;
+}
+table tr {
+    background-color: rgba(221, 221, 221, 0.301);
+}
+table tbody tr:nth-child(2),
+table tbody tr:nth-child(4),
+table tbody tr:nth-child(6),
+table tbody tr:nth-child(8) {
+    background-color: rgba(204, 204, 204, 0.322);
+}
+table tbody tr:first-child td:not(:first-child) span {
+    display: inline-block;
+    font-size: 50px;
+    margin-right: 5px;
+    color: orangered;
+    position: relative;
+}
+table tbody tr:first-child td:not(:first-child) span::before {
+    content: "$";
+    position: relative;
+    font-size: 20px;
+    top: -24px;
+    left: -3px;
+    color: rgb(66, 64, 64);
+}
+table tbody tr:first-child td:not(:first-child) span::after {
+    content: "99";
+    position: absolute;
+    font-size: 20px;
+    top: 3px;
+    left: 73px;
+    color: rgb(66, 64, 64);
+}
+table tbody tr td i {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+

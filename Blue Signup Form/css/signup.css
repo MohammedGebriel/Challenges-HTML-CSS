@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #2196f3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.blue-signup {
+    margin: 20px auto;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+
+}
+.blue-signup h3 {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.blue-signup form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    display: block;
+}
+.blue-signup form div {
+    position: relative;
+}
+.blue-signup form div::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    color: #777;
+    font-size: 14px;
+}
+.blue-signup form div:nth-child(1)::before {
+    content: "\f007";
+}
+.blue-signup form div:nth-child(2)::before {
+    content: "\f0e0";
+}
+.blue-signup form div:nth-child(3)::before {
+    content: "\f023";
+}
+.blue-signup form div:nth-child(4)::before {
+    content: "\f023";
+}
+.blue-signup form input[type="submit"] {
+    color: #fff;
+    background-color: #2196f3;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.blue-signup > p {
+    color: #777;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.blue-signup > p span {
+    color: #2196f3;
+    cursor: pointer;
+    font-weight: bold;
+}
+.blue-signup > div p {
+    margin-bottom: 10px;
+    color: #666;
+    font-weight: bold;
+}
+.blue-signup > div div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.blue-signup > div div i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+.blue-signup > div div i:nth-child(1) {
+    background-color: #1877f2;
+}
+.blue-signup > div div i:nth-child(2) {
+    background-color: #1da1f2;
+}
+.blue-signup > div div i:nth-child(3) {
+    background-color: #dd4b39;
+}

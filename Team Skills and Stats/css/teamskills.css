@@ -1,0 +1,208 @@
+:root {
+    --main-background-color: #EEE;
+    --main-padding-top: 50px;
+    --main-padding-bottom: 50px;
+    --main-color: #2196f3;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+@media (min-width: 767px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .container h2 {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header  nav  ul {
+    display: flex;
+    
+}
+header  nav  ul li {
+    display: flex;
+    margin-left: 10px;
+}
+header  nav  ul li a {
+    color: black;
+}
+.services {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color: var(--main-background-color);
+}
+.services .container {
+    text-align: center;
+}
+.services .container h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.services .container h3 span {
+    color: var(--main-color);
+}
+.services .container p {
+    line-height: 2;
+}
+.main-services {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
+.main-services .container {
+    display: flex;
+    gap: 30px;
+}
+.main-services .container .box {
+    text-align: center;
+    width: calc(33.3% - 20px);
+}
+.main-services .container .box img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.main-services .container .box h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.main-services .container .box p {
+    line-height: 1.6;
+    color: #777;
+}
+.about {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color: var(--main-background-color);
+}
+.about .container {
+    display: flex;
+    gap: 50px;
+}
+.about .container figure img {
+    width: 400px;
+}
+.about .container .details h4{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.about .container .details p{
+    line-height: 2;
+    color: #777;
+}
+.stats {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
+.stats .container {
+    display: flex;
+    gap: 30px;
+}
+.stats .container .box {
+    width: calc(33% - 20px);
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+.stats .container .box:first-child {
+    background-color: #A52A2A;
+}
+.stats .container .box:nth-of-type(2) {
+    background-color: #008B8B;
+}
+.stats .container .box:nth-of-type(3) {
+    background-color: #196e6a;
+}
+.stats .container .box .number {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+}
+.skill {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color: var(--main-background-color);   
+}
+.skill > h4 {
+    margin: auto;
+    width: fit-content;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.skill .container .box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.skill .container .box h4 {
+    font-size: 22px;
+    width: 100px;
+    text-align: right;
+}
+.skill .container .box .prog {
+    flex: 1;
+    height: 40px;
+    background-color: #fff;
+}
+.skill .container .box .prog span {
+    display: block;
+    height: 100%;
+    background-color: var(--main-color);
+    position: relative;
+}
+.skill .container .box .prog span::before {
+    content: attr(number);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    font-weight: bold;
+}
+footer {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.863);
+    color: white;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+footer .container .name span {
+    color: var(--main-color);
+}

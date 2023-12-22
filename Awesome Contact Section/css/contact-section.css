@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    padding: 0 15px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 415px;
+    height: 100%;
+    width: 2900px;
+    background-color: #191970;
+    z-index: -1 ;
+}
+.container nav {
+    background-color: #191970;
+    color: white;
+    padding: 40px 40px 40px 0   ;
+    min-width: 400px;
+    position: relative;
+}
+.container nav::before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: #2196f3;
+    left: -75px;
+    top: -75px;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+.container nav img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.container nav ul {
+    margin-bottom: 100px;
+}
+.container nav li {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    padding: 10px 40px 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 20px;
+}
+.container nav li:last-child {
+    background-color: rgba(221, 221, 221, 0.199);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.container nav .job {
+    margin-left: 40px;
+}
+.container nav .job span {
+    display: block;
+    margin-bottom: 5px;
+    color: #777;
+}
+.container nav .job h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.container nav .job p {
+    color: #aaa;
+    line-height: 1.5;
+}
+.container nav .job a {
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+.container section {
+    background-color: #fff;
+    min-height: 738px;
+    padding: 50px;
+    position: relative;
+}
+.container section > h2 {
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.container section > p {
+    font-size: 25px;
+    color: #777;
+    line-height: 1.6;
+}
+.container section .big-box {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+.container section .big-box form {
+    width: 280px;
+}
+.container section .big-box form .improve {
+    display: block;
+    outline: none;
+    border:none;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+.container section .big-box form .improve:focus {
+    border-bottom: 4px solid #aaa;
+}
+.container section .big-box form .improve:focus::placeholder {
+    color: transparent;
+}
+.container section .big-box form textarea {
+    resize: none;
+    height: 150px;
+}
+.container section .big-box form input[type="submit"] {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #191970;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    /* padding-left: 30px; */
+}
+.container section .big-box form .send {
+    position: relative;
+    padding-left: 20px;
+}
+.container section .big-box form .send::before {
+    content: "\f1d8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #191970;
+    margin-right: 5px;
+}
+.container section .big-box .title {
+    flex: 1;
+}
+.container section .big-box .title h2 {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.container section .big-box .title p {
+    color: #777;
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.container section .big-box .title span {
+    display: block;
+    color: #191970;
+    margin-bottom: 20px;
+}
+.container section img {
+    position: absolute;
+    height: 220px;
+    width: 300px;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
